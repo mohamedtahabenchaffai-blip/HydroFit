@@ -1,0 +1,99 @@
+:root {
+  /* ========================================
+     COLORS
+  ======================================== */
+
+  --color-background: #050816;
+  --color-surface: #0f172a;
+  --color-card: rgba(255, 255, 255, 0.05);
+
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-text: #f8fafc;
+  --color-text-secondary: #94a3b8;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* ========================================
+     GRADIENTS
+  ======================================== */
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    #2563eb 0%,
+    #60a5fa 100%
+  );
+
+  --gradient-dark: linear-gradient(
+    180deg,
+    #050816 0%,
+    #0f172a 100%
+  );
+
+  --gradient-glass: linear-gradient(
+    135deg,
+    rgba(255,255,255,.12),
+    rgba(255,255,255,.04)
+  );
+
+  /* ========================================
+     SHADOWS
+  ======================================== */
+
+  --shadow-sm: 0 5px 15px rgba(0,0,0,.15);
+
+  --shadow-md: 0 10px 30px rgba(0,0,0,.25);
+
+  --shadow-lg: 0 25px 60px rgba(0,0,0,.40);
+
+  --shadow-blue: 0 0 40px rgba(37,99,235,.45);
+
+  /* ========================================
+     BORDER RADIUS
+  ======================================== */
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* ========================================
+     SPACING
+  ======================================== */
+
+  --space-xs: .5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* ========================================
+     MAX WIDTH
+  ======================================== */
+
+  --container-width: 1280px;
+
+  /* ========================================
+     TRANSITIONS
+  ======================================== */
+
+  --transition-fast: .25s ease;
+  --transition-normal: .35s ease;
+  --transition-slow: .6s ease;
+
+  /* ========================================
+     Z INDEX
+  ======================================== */
+
+  --z-navbar: 1000;
+  --z-modal: 2000;
+  --z-loader: 3000;
+}
