@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Container from "./Container";
 import Button from "@/components/ui/Button";
@@ -11,6 +12,7 @@ const navigation = [
   { name: "Lifestyle", href: "#lifestyle" },
   { name: "FAQ", href: "#faq" },
 ];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,18 +33,23 @@ export default function Navbar() {
       }`}
     >
       <Container className="flex h-20 items-center justify-between">
-        {/* Logo */}
 
+        {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-black tracking-widest text-white"
+          className="flex items-center"
         >
-          HYDRO
-          <span className="text-blue-500">FIT</span>
+          <Image
+            src="/images/logo.png"
+            alt="HydroFit Logo"
+            width={170}
+            height={55}
+            priority
+            className="h-auto w-[170px]"
+          />
         </Link>
 
         {/* Desktop */}
-
         <nav className="hidden items-center gap-10 lg:flex">
           {navigation.map((item) => (
             <Link
@@ -56,7 +63,6 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-
         <div className="hidden lg:block">
           <Button size="md">
             Order Now
@@ -64,7 +70,6 @@ export default function Navbar() {
         </div>
 
         {/* Mobile */}
-
         <button
           className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white lg:hidden"
           aria-label="Open menu"
