@@ -42,10 +42,10 @@ export default function Navbar() {
           <Image
             src="/images/logo.png"
             alt="HydroFit Logo"
-            width={170}
-            height={55}
+            width={150}
+            height={50}
             priority
-            className="h-auto w-[170px]"
+            className="h-10 w-auto object-contain"
           />
         </Link>
 
