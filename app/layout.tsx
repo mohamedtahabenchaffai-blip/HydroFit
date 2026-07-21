@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import CustomCursor from "@/components/cursor/CustomCursor";
 import ScrollProgress from "@/components/progress/ScrollProgress";
 import SmoothScroll from "@/components/smooth-scroll/SmoothScroll";
+import Navbar from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hydrofit.com"),
@@ -79,6 +80,9 @@ export default function RootLayout({
         <SmoothScroll>
           <ScrollProgress />
           <CustomCursor />
+
+          <Navbar />
+
           {children}
         </SmoothScroll>
       </body>
